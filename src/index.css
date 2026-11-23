@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #26312f;
+  background: #fbfaf6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #6f8378;
+  outline-offset: 2px;
+}
+
+.cat-breathe {
+  animation: cat-breathe 1.4s ease-in-out infinite;
+  transform-origin: 50% 80%;
+}
+
+@keyframes cat-breathe {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg) scale(1);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(2deg) scale(1.05);
+  }
+}
